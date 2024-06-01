@@ -1,0 +1,46 @@
+.container{
+    background-color: #121212;
+}
+
+.container p {
+    display: inherit;
+    align-items: end;
+    color: #fff;
+    font-size: 48px;
+    font-family: Inter;
+    margin-right: 40px;
+}
+
+.tiltedImage {
+    width: 350px;
+    height: 350px;
+    display: inline-block;
+    transform: rotate(10deg); 
+    transition: transform 0.5s ease-in-out;
+    border-radius: 20px; 
+  }
+  
+  .tiltedImage:hover {
+    transform: rotate(-10deg);
+  }
+  .text{
+    display: flex;
+    padding: 60px 0px 30px 60px;
+    opacity: 0.2;
+  }
+
+  .textCenter{
+    justify-content: center;
+  }
+
+  .textStart{
+    justify-content: start;
+  }
+
+  .text:hover {
+    opacity:1;
+  }
+
+  .text:hover .tiltedImage {
+    transform: rotate(-10deg);
+}
